@@ -39,9 +39,19 @@ public class mainClass {
 				}
 			}
 			if(outPut.isEmpty()){
-				System.out.println("-1");
+				for(String outPage : strInput.split(",")){
+					int check = Integer.parseInt(outPage);
+					if(check>allPage){						//
+						outPut+="," + outPage;			
+					}
+				}
+				if(outPut.isEmpty()){
+					System.out.println("0");
+				}else{
+					System.out.println("+ " + outPut.substring(1));
+				}
 			}else{				
-				System.out.println(outPut.substring(1));
+				System.out.println("- " + outPut.substring(1));
 			};			
 			//End Processing strInput==================		
 			//System.out.println("Finished checking...");
