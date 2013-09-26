@@ -56,6 +56,7 @@ public class mainClass {
 			//End Processing strInput==================		
 			//System.out.println("Finished checking...");
 		} catch (Exception e) {
+			e.printStackTrace();
 			// TODO: handle exception
 		}
 	}
