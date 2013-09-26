@@ -3,8 +3,6 @@ package checkCategory;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.swing.JOptionPane;
-
 public class mainClass {
 	public static void main(String[] agrs){
 		try {				
@@ -40,10 +38,15 @@ public class mainClass {
 			}
 			if(outPut.isEmpty()){
 				for(String outPage : strInput.split(",")){
-					int check = Integer.parseInt(outPage);
-					if(check>allPage){						//
-						outPut+="," + outPage;			
-					}
+					try {
+						int check = Integer.parseInt(outPage);
+						if(check>allPage){						//
+							outPut+="," + outPage;			
+						}
+					} catch (Exception e) {
+						// TODO: handle exception
+						//Not anumber
+					}					
 				}
 				if(outPut.isEmpty()){
 					System.out.println("0");
@@ -56,7 +59,7 @@ public class mainClass {
 			//End Processing strInput==================		
 			//System.out.println("Finished checking...");
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			// TODO: handle exception
 		}
 	}
