@@ -61,7 +61,7 @@ public class mainClass {
 			//System.out.println("testCheckin");
 			//System.out.println("testCheckin1");
 			//System.out.println("testCheckin2");
-			System.out.println("testCheckin5");
+			System.out.println("testCheckin6");
 		} catch (Exception e) {
 			//e.printStackTrace();
 			// TODO: handle exception
