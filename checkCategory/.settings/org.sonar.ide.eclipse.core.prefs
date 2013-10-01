@@ -1,7 +1,7 @@
-analyseLocally=true
+analyseLocally=false
 eclipse.preferences.version=1
 extraProperties=
-lastAnalysisDate=1380189824778
+lastAnalysisDate=1380618725000
 projectKey=java-sonar-runner-simple
 serverUrl=http\://localhost\:9000
 version=2
