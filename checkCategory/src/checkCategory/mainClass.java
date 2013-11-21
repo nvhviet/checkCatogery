@@ -23,7 +23,7 @@ public class mainClass {
 					strProcess+="," + String.valueOf(i);
 				}	
 				strProcess = strProcess.substring(1);
-				strInput = strInput.replace(strFind, strProcess);
+				strInput = strInput.replaceFirst(strFind, strProcess);
 			}
 			//System.out.println("Process: " + strInput);
 			strInput = "," + strInput + ",";
